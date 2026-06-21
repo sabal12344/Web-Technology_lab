@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Implementation Types</title>
+
+
+    <script>
+        function runInternalJS() {
+            const statusText = document.getElementById("status");
+            statusText.textContent = "Internal JavaScript executed successfully!";
+            statusText.style.color = "#007BFF";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>types of js</h1>
+    <p id="status">Check these buttons</p>
+
+    
+    <button onclick="document.getElementById('status').textContent = 'Inline JavaScript executed successfully!'; document.getElementById('status').style.color = '#28A745';">
+        Run Inline JS
+    </button>
+
+    <button onclick="runInternalJS()">
+        Run Internal JS
+    </button>
+
+
+    <button onclick="runExternalJS()">
+        Run External JS
+    </button>
+
+    <script src="sabal22_Q1.js"></script>
+</body>
+</html>

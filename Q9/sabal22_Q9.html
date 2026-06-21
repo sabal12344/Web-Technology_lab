@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jaadu</title>
+
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(10,60px);
+            gap:5px;
+        }
+
+        .prime,.even,.odd{
+            width:60px;
+            height:60px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .prime{
+            background:red;
+            color:white;
+        }
+
+        .even{
+            background:green;
+            color:white;
+        }
+
+        .odd{
+            background:yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="number" id="num">
+    <button onclick="jaadu()">JAADU</button>
+
+    <br><br>
+
+    <div id="container"></div>
+
+    <script src="sabal22_Q9.js"> </script>
+
+</body>
+</html>
+
