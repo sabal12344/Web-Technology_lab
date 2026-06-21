@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open URL</title>
+</head>
+<body>
+
+    Enter Website URL:
+    <input type="text" id="url">
+
+    <button onclick="openURL()">Open Website</button>
+
+    <script>
+
+        function openURL() {
+
+    var url = document.getElementById("url").value;
+
+    if (!url.includes("www")) {
+        url = "www." + url;
+    }
+
+    if (!url.startsWith("https")) {
+        url = "https://" + url;
+    }
+
+    window.open(url, "_blank");
+}
+
+    </script>
+
+</body>
+</html>

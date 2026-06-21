@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigator Object</title>
+</head>
+<body>
+
+    <h2>Browser Information</h2>
+
+    <p id="info"></p>
+
+    <script>
+
+        var text = "";
+
+        text += "Browser Name: " + navigator.appName + "<br>";
+        text += "Browser Version: " + navigator.appVersion + "<br>";
+        text += "Platform (OS): " + navigator.platform + "<br>";
+
+        document.getElementById("info").innerHTML = text;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+
+                document.getElementById("info").innerHTML +=
+                "Latitude: " + position.coords.latitude + "<br>" +
+                "Longitude: " + position.coords.longitude;
+
+            });
+        }
+        else {
+            document.getElementById("info").innerHTML +=
+            "<br>Geolocation is not supported.";
+        }
+
+    </script>
+
+</body>
+</html>

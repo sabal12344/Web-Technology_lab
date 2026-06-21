@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+
+    <style>
+        table{
+            width:500px;
+            border-collapse:collapse;
+        }
+
+        td, th{
+            border:1px solid black;
+            padding:10px;
+        }
+
+        button{
+            padding:5px 10px;
+        }
+
+        .trash{
+            background:red;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        .add{
+            margin-top:10px;
+            background:blue;
+            color:white;
+            border:none;
+            padding:8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<table id="myTable">
+    <tr>
+        <th>No</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+</table>
+
+<br>
+
+<button class="add" onclick="addRow()">Add New</button>
+
+<script src="sabal22_Q14.js">
+</script>
+
+</body>
+</html>

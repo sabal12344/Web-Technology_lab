@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #main{
+            width:300px;
+            height:200px;
+        }
+
+        .thumb{
+            width:100px;
+            height:70px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <img id="main" src="tiger.jfif">
+
+    <br><br>
+
+    <img class="thumb" src="tiger.jfif">
+    <img class="thumb" src="goat.webp">
+    <img class="thumb" src="grasshopper.webp">
+
+    <script>
+
+        $(".thumb").click(function(){
+
+            var imgSrc = $(this).attr("src");
+
+            $("#main").attr("src", imgSrc);
+
+        });
+
+    </script>
+
+</body>
+</html>
