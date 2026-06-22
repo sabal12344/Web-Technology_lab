@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books>
+
+    <book>
+        <id>1</id>
+        <title>Java Programming</title>
+        <author>James Gosling</author>
+        <publisher>ABC Publication</publisher>
+        <price>500</price>
+    </book>
+
+    <book>
+        <id>2</id>
+        <title>Web Technology</title>
+        <author>John Smith</author>
+        <publisher>XYZ Publication</publisher>
+        <price>450</price>
+    </book>
+
+    <book>
+        <id>3</id>
+        <title>Database System</title>
+        <author>R. Elmasri</author>
+        <publisher>PQR Publication</publisher>
+        <price>600</price>
+    </book>
+
+</books>

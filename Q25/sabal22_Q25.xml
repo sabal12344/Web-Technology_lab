@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE books [
+
+<!ELEMENT books (book+)>
+<!ELEMENT book (title,author,publisher,price)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+]>
+
+<books>
+    <book>
+        <title>Java Programming</title>
+        <author>James Gosling</author>
+        <publisher>ABC Publication</publisher>
+        <price>500</price>
+    </book>
+</books>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<books
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="sabal22_Q26.xsd">
+
+    <book>
+        <title>Java Programming</title>
+        <author>James Gosling</author>
+        <publisher>ABC Publication</publisher>
+        <price>500</price>
+    </book>
+
+</books>
