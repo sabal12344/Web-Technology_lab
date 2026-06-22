@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML iframe and img Tag Demonstration</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .media-container {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 20px 10px rgba(0,0,0,0.05);
+        }
+        img, iframe {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            border: none;
+            border-radius: 4px;
+        }
+        iframe {
+            height: 450px; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>img and iframe tag demonstration</h1>
+
+    <div class="media-container">
+        <h2>1. The HTML Image Tag (&lt;img&gt;)</h2>
+        <p>This image is here because of img tag</p>
+        
+        
+        <img src="grizzly.jfif" alt="rawrr">
+    </div>
+
+    
+    <div class="media-container">
+        <h2>2. The HTML Inline Frame Tag (&lt;iframe&gt;)</h2>
+        <p>Here, i am embedding my custom chess webpage that i created earlier.</p>
+        
+        <!-- Replace src with your target page URL or embedded media URL -->
+        <iframe src="https://sabal12344.github.io/Chess-but-better/" title="Example Website Embedded Domain"></iframe>
+    </div>
+
+</body>
+</html>

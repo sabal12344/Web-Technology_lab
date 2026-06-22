@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+/* Top navbar */
+
+.navbar{
+    background:#0b2f4f;
+    overflow:hidden;
+}
+
+.navbar a{
+    float:left;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+.logo{
+    font-weight:bold;
+    margin-right:80px;
+}
+
+/* Mobile menu */
+
+.mobile-menu{
+    display:none;
+    width:150px;
+    margin:30px auto;
+    background:#0b2f4f;
+}
+
+.mobile-menu .heading{
+    color:white;
+    padding:10px;
+}
+
+.mobile-menu .menu-btn{
+    float:right;
+    border:1px solid white;
+    padding:2px 5px;
+    font-size:10px;
+}
+
+.mobile-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:12px;
+    border-top:1px solid #1d4f7a;
+}
+
+/* Responsive part */
+
+@media(max-width:700px){
+
+    .navbar{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <a href="#" class="logo">Mystery Code</a>
+
+    <a href="#">Home</a>
+
+    <a href="#">About Us</a>
+
+    <a href="#">Service</a>
+
+    <a href="#">Portfolio</a>
+
+    <a href="#">Blog</a>
+
+    <a href="#">Contact Us</a>
+
+</div>
+
+
+<div class="mobile-menu">
+
+    <div class="heading">
+
+        <a href="#" class="logo">Mystery Code</a>
+
+        
+
+    </div>
+
+    <a href="#">Home</a>
+
+    <a href="#">About Us</a>
+
+    <a href="#">Service</a>
+
+    <a href="#">Portfolio</a>
+
+    <a href="#">Blog</a>
+
+    <a href="#">Contact Us</a>
+
+</div>
+
+</body>
+
+</html>

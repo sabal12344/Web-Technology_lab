@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Style>
+           
+           body{
+            display:flex;
+           }
+
+          
+            .mainbox{
+                border:1px solid black;
+                padding:50px;
+
+            }
+
+           #left li{
+            margin:10px;
+           }
+
+           .bluebox{
+            border: 10px solid rgb(87, 140, 224);
+           }
+
+
+            .right-section{
+                display:flex;
+            }
+            .right-subsection{
+                padding:30px;
+            }
+
+
+        </Style>
+    </head>
+
+    <body>
+        <div class="mainbox" id="left">
+
+            <ol type="I" class="bluebox">
+                <li >List item 1
+                <ol type="a">
+                    <li>Nested item 1.1</li>
+                    <li>Nested item 1.2</li>
+
+                </ol>
+                </li>
+                
+                <li >
+                    List item 2
+                    <ol type ="1">
+                        <li>Nested item 2.1</li>
+                        <li>Nested item 2.2
+                            <ul type ="circle">
+                                <li>Nested item 2.2.1</li>
+
+                                <li>
+                                    Nested item 2.2.2
+                                    <ul>
+                                        <li>Nested item 2.2.2.1</li>
+                                        <li>Nested item 2.2.2.2</li>
+                                    </ul>
+                                </li>
+                                <li> Nested item 2.2.3</li>
+
+                            </ul>
+                        </li>
+                        <li>Nested item 2.3</li>
+
+                    </ol>
+                </li>
+                <li >List item 3
+                    <ul>
+                        <li>Nested item 3.1</li>
+                        <li>Nested item 3.2</li>
+                        <li>Nested item 3.3</li>
+                    </ul>
+                </li>
+
+            </ol>
+
+        </div>
+
+        <div class="mainbox">
+
+            <div class="bluebox">
+                  <div class="right-section">
+                <div class="right-subsection">
+                    <h3><em><h3>An unordered list.</h3></em></h3>
+                    <ul>
+                        <li>first item</li>
+                        <li>second item</li>
+                        <li>third item</li>
+                        <li>fourth item</li>
+                        <li>fifth item</li>
+                    </ul>
+                </div>
+
+
+                <div class="right-subsection">
+                    <h3><em><h3>An ordered list.</h3></em></h3>
+                    <ol>
+                        <li>first item</li>
+                        <li>second item</li>
+                        <li>third item</li>
+                        <li>fourth item</li>
+                        <li>fifth item</li>
+                    </ol>
+
+                </div>
+
+            </div>
+
+            <div class="right-section">
+                <div class="right-subsection">
+                    <h3><em><h3>An list with lower alpha.</h3></em></h3>
+                    <ol type="a">
+                        <li>first item</li>
+                        <li>second item</li>
+                        <li>third item</li>
+                        <li>fourth item</li>
+                        <li>fifth item</li>
+                    </ol>
+                </div>
+
+
+                <div class="right-subsection">
+                    <h3><em><h3>A list with upper roman.</h3></em></h3>
+                    <ol type="I">
+                        <li>first item</li>
+                        <li>second item</li>
+                        <li>third item</li>
+                        <li>fourth item</li>
+                        <li>fifth item</li>
+                    </ol>
+
+                </div>
+                
+
+
+            </div>
+            </div>
+
+          
+            
+
+        </div>
+    </body>
+
+</html>

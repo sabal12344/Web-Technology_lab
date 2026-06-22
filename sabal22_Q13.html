@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+    color:white;
+}
+
+.forms{
+    display:flex;
+    justify-content:space-between;
+}
+
+.box{
+    width:45%;
+    background:rgba(0,0,0,0.4);
+    padding:15px;
+}
+
+h3{
+    color:cyan;
+}
+
+
+
+input[type=text],
+input[type=email],
+input[type=password]{
+
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+
+    box-sizing:border-box;
+}
+
+label{
+
+    color:white;
+
+    font-size:14px;
+
+    display:block;
+
+    margin:10px 0;
+}
+
+input[type=radio],
+input[type=checkbox]{
+
+    width:auto;
+
+    margin-right:8px;
+}
+
+button{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:15px;
+
+    background:goldenrod;
+
+    border:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.footer{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:12px;
+
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>REGISTRATION / LOGIN FORM</h2>
+
+    <div class="forms">
+
+        <!-- Register Form -->
+
+        <div class="box">
+
+            <h3>Register Form :</h3>
+
+            <input type="text" placeholder="Username">
+
+            <input type="email" placeholder="Email">
+
+            <input type="password" placeholder="Password">
+
+            <input type="password" placeholder="Confirm Password">
+
+            <label>
+
+                <input type="radio" name="gender">
+
+                Female
+
+            </label>
+
+            <label>
+
+                <input type="radio" name="gender">
+
+                Male
+
+            </label>
+
+            <label>
+
+                <input type="checkbox">
+
+                I have read and accept terms of use.
+
+            </label>
+
+            <button>SUBMIT</button>
+
+        </div>
+
+
+        <!-- Login Form -->
+
+        <div class="box">
+
+            <h3>Login form :</h3>
+
+            <input type="email" placeholder="Enter Your Email">
+
+            <input type="password" placeholder="Password">
+
+            <label>
+
+                <input type="checkbox">
+
+                Remember me
+
+            </label>
+
+            <button>LOGIN</button>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        © 2016 Registration / Login form. All Rights Reserved.
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

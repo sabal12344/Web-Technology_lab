@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #body{
+                margin:0;
+            }
+            #desktop{
+                display:block;
+            }
+            #non-desktop{
+                display:none;
+            }
+         
+            #desktop div{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #d1 div{
+                height:60px;
+                width:100%;
+                }
+
+            #d2 div{
+                height:480px;
+                width:34%;
+            }
+
+
+
+            .header{
+                background-color: rgb(249, 113, 113);
+            }
+            .main{
+                 background-color: rgb(255, 255, 255);
+
+            }
+            .left{
+                 background-color: rgb(245, 212, 96);
+
+            }
+            .right{
+                 background-color: rgb(198, 237, 120);
+
+            }
+            .footer{
+                 background-color: rgb(113, 194, 241);
+                 height:60px;
+            }
+
+
+            @media screen and (max-width: 768px){
+                #desktop{
+                    display:none;
+                }
+                #non-desktop{
+                    display:block;
+                }
+                #non-desktop div{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+
+                .header{
+                    height:15vh;
+                }
+
+                .main{
+                    height:30vh;
+                    width:100%;
+                }
+
+                
+                #nd2{
+                    display:flex;
+
+                }
+                #nd2 div{
+                    width:50%;
+                    height:35vh;
+                }
+                .footer{
+                    height:15vh;
+
+                }
+
+
+            }
+
+            @media screen and (max-width: 600px){
+                 #non-desktop div{
+                    display:block;
+                    
+                    width:100%;
+                    
+                }
+
+                 #non-desktop div:not(#nd2){
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    height:20vh;
+
+                 }
+                
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div id="desktop">
+
+            <div id="d1">
+                <div class="header">Header</div>
+
+            </div>
+            
+    
+            <div id="d2">  
+            <div class="left">Left</div>
+            <div class="main">Main</div>            
+            <div class="right">Right</div>
+            </div>
+
+
+     
+            <div class="footer">Footer</div>
+
+        </div>
+
+
+
+
+        <div id="non-desktop">
+
+
+
+             
+                <div class="header">Header</div>
+                <div class="main">Main</div>
+
+            
+            
+    
+            <div id="nd2">  
+            <div class="left">Left</div>                     
+            <div class="right">Right</div>
+            </div>
+
+
+            
+
+
+            
+            <div class="footer">Footer</div>
+            
+
+        </div>
+
+
+
+      
+
+
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.box{
+    width:400px;
+    position:relative;
+}
+
+img{
+    width:100%;
+}
+
+.text{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:10px;
+    display:none;
+}
+
+.box:hover .text{
+    display:block;
+}
+
+button{
+    border:none;
+    border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<img src="tree.avif">
+
+<div class="text">
+    <b>Card Title</b><br>
+    This is a sampple card description.<br><br>
+
+    <button>Read More</button>
+</div>
+
+</div>
+
+</body>
+</html>
