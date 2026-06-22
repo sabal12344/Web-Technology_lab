@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:black;
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+.whole{
+    background-color: #bdbdbd;
+    width: 50%;
+    border: 1px solid black;
+    box-shadow: 10px 20px 15px rgba(0,0,0,0.7);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.lang{
+    font-size:20px;
+}
+
+h1{
+    margin:30px 0;
+}
+
+.form{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:22px 16px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+span{
+    color:red;
+}
+
+input,select{
+    width:100%;
+    padding:8px;
+    box-sizing:border-box;
+    border:1px solid #bdbdbd;
+}
+
+.email{
+    grid-column:2/4;
+}
+
+.gender{
+    padding-top:28px;
+}
+
+.gender input{
+    width:auto;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.btn{
+    background:#1a73e8;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    cursor:pointer;
+}
+
+.btn2{
+    background:white;
+    color:#1a73e8;
+    border:1px solid #1a73e8;
+    padding:10px 22px;
+}
+</style>
+
+</head>
+<body>
+
+
+    <div class="whole">
+    <div class="top">
+
+    <div class="logo">
+        <img src="emblem.PNG">
+        <h2>लोक सेवा आयोग</h2>
+    </div>
+
+    <div class="lang">नेपा▼</div>
+
+</div>
+
+<h1>दर्ता गर्नुहोस्</h1>
+
+<form>
+
+<div class="form">
+
+<div>
+<label>पहिलो नाम <span>*</span></label>
+<input type="text">
+</div>
+
+<div>
+<label>बीचको नाम</label>
+<input type="text">
+</div>
+
+<div>
+<label>थर <span>*</span></label>
+<input type="text">
+</div>
+
+<div>
+<label>प्रयोगकर्ता नाम <span>*</span></label>
+<input type="text">
+</div>
+
+<div>
+<label>जन्म मिति (वि.सं.) <span>*</span></label>
+<input type="date">
+</div>
+
+<div>
+<label>जन्म मिति (इ.सं.) <span>*</span></label>
+<input type="date">
+</div>
+
+<div class="gender">
+<label>लिङ्ग <span>*</span></label>
+<input type="radio" name="g"> पुरुष
+<input type="radio" name="g"> महिला
+<input type="radio" name="g"> अन्य
+</div>
+
+<div class="email">
+<label>ईमेल <span>*</span></label>
+<input type="email">
+</div>
+
+<div>
+<label>मोबाइल नम्बर <span>*</span></label>
+<input type="text">
+</div>
+
+<div>
+<label>राष्ट्रिय परिचय नम्बर</label>
+<input type="text">
+</div>
+
+<div>
+<label>नागरिकता नम्बर <span>*</span></label>
+<input type="text">
+</div>
+
+<div>
+<label>नागरिकता जारी जिल्ला <span>*</span></label>
+<select>
+<option>विकल्प छान्नुहोस् ...</option>
+</select>
+</div>
+
+<div>
+<label>नागरिकता जारी मिति (वि.सं.) <span>*</span></label>
+<input type="date">
+</div>
+
+<div>
+<label>नागरिकता जारी मिति (इ.सं.) <span>*</span></label>
+<input type="date">
+</div>
+
+</div>
+
+<div class="buttons">
+<button type="button" class="btn2">लग-इनमा फर्कनुहोस्</button>
+<button type="submit" class="btn">बुझाउनुहोस्</button>
+</div>
+
+</form>
+
+
+        
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Invoice</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    margin:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole{
+    width:50%;
+}
+
+.top{
+    border-top:8px solid #d95b2d;
+    padding:20px 0;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:gray;
+    color:white;
+    text-align:center;
+    line-height:50px;
+}
+
+.info{
+    display:flex;
+    gap:15px;
+}
+
+.invoice{
+    text-align:right;
+}
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.box{
+    width:40%;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#d95b2d;
+    color:white;
+    padding:8px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:6px;
+    height:20px;
+}
+
+.total{
+    width:250px;
+    margin-left:auto;
+    margin-top:15px;
+}
+
+.total td{
+    border:none;
+}
+
+.balance{
+    background:#f4dddd;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.bottom{
+    border-bottom:8px solid #d95b2d;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+    <div class="whole">
+
+        <div class="top">
+
+    <div class="info">
+        <div class="logo">LOGO</div>
+
+        <div>
+            <b>&lt;Your Company Name&gt;</b><br>
+            &lt;Your address&gt;<br>
+            &lt;Your contact details&gt;
+        </div>
+    </div>
+
+    <div class="invoice">
+        <h2>INVOICE</h2>
+        DATE<br><br>
+        INVOICE NO.
+    </div>
+
+</div>
+
+<hr>
+
+<div class="details">
+
+    <div class="box">
+        <b>BILL TO</b><br><br>
+        &lt;Client Name&gt;<br>
+        &lt;Client Company&gt;<br>
+        &lt;Address&gt;<br>
+        &lt;Phone&gt;<br>
+        &lt;Email&gt;
+    </div>
+
+    <div class="box">
+        <b>SHIP TO</b><br><br>
+        &lt;Name / Dept&gt;<br>
+        &lt;Client Company&gt;<br>
+        &lt;Address&gt;<br>
+        &lt;Phone&gt;
+    </div>
+
+</div>
+
+<table>
+    <tr>
+        <th>DESCRIPTION</th>
+        <th>QTY</th>
+        <th>UNIT PRICE</th>
+        <th>TOTAL</th>
+    </tr>
+
+    <tr><td></td><td></td><td></td><td>0.00</td></tr>
+    <tr><td></td><td></td><td></td><td>0.00</td></tr>
+    <tr><td></td><td></td><td></td><td>0.00</td></tr>
+    <tr><td></td><td></td><td></td><td>0.00</td></tr>
+    <tr><td></td><td></td><td></td><td>0.00</td></tr>
+    <tr><td></td><td></td><td></td><td>0.00</td></tr>
+</table>
+
+<table class="total">
+    <tr><td>SUBTOTAL</td><td>0.00</td></tr>
+    <tr><td>DISCOUNT</td><td>0.00</td></tr>
+    <tr><td>TAX RATE</td><td>0.00%</td></tr>
+    <tr><td>TOTAL TAX</td><td>0.00</td></tr>
+</table>
+
+<div class="balance">
+    Balance Due &nbsp; Rs 0.00
+</div>
+
+<div class="bottom"></div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
